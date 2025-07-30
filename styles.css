@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+   padding-bottom: 50px;
+   color: rgb(11, 52, 99);
+   margin-right: 10px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(106, 168, 231);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch{
+    background-image:url("https://media.istockphoto.com/id/1393709868/vector/clock-or-stopwatch-pocket-watch-on-a-dark-blue-background-clockwork-pocket-watch-abstract.jpg?s=612x612&w=0&k=20&c=SW3NnN07tAy-UOeE8s82l3BhUOosnRtMKRM5Q99ru54=") ;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow:rgba(7, 35, 81, 0.25) 0px 50px 100px -20px, rgba(26, 79, 184, 0.3) 0px 30px 60px -30px, rgba(6, 64, 122, 0.35) 0px -2px 6px 0px inset;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+.buttons img{
+    width: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(161, 187, 235);
+    border-radius: 54%;
+}
+.buttons img:active{
+    transform: scale(0.96); /* slight shrink */
+    box-shadow: 0 2px 4px rgba(179, 41, 41, 0.2);
+}
+.buttons img:nth-child(2){
+    width: 65px;
+}
+.time{
+    color: rgb(252, 251, 252);
+    font-size:55px ;
+    margin-top:30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.img-btn {
+  cursor: pointer;
+  transition: transform 0.1s, filter 0.1s;
+}
+
+.img-btn:active {
+  transform: scale(0.95);
+  filter: brightness(0.8); /* makes it look darker when clicked */
+}
